@@ -49,12 +49,73 @@ namespace SMP
 			//** **
 			//*****
 			//S5(5);
+			S6(n);
+			
+			// Cred ca asa erau problemele astea
+			//1
+			//2 3
+			//3 4 5
+			//4 5 6 7
 			S5(n);
+
+			//      1
+			//    3 2
+			//  5 4 3
+			//7 6 5 4 
+			S7_i(n);
+
+			//      1
+			//    2 3
+			//  3 4 5
+			//4 5 6 7
+			S7_ii(n);
 			Console.ReadKey();
 
 		}
 
+		private static void S7_ii(int n)
+		{
+			int k = 1;
+			for (int i = 1; i <= n; i++)
+			{
+				for (int j = 1; j <= n; j++)
+				{
+					if (i <= n - j)
+						Console.Write("  ");
+					else Console.Write("{0} ",k++);
+				}
+				k = k - i + 1;
+				Console.WriteLine();
+			}
+		}
+
+		private static void S7_i(int n)
+		{
+			for (int i = 1; i <= n; i++)
+			{
+				for (int j = 1; j <= n; j++)
+				{
+					if (i<=n-j)
+						Console.Write("  ");
+					else Console.Write("{0} ",i+n-j);
+				}
+				Console.WriteLine();
+			}
+		}
+
 		private static void S5(int n)
+		{
+			for (int i = 1; i <= n; i++)
+			{
+				for (int j = 1; j <= i; j++)
+				{
+					Console.Write("{0} ",i+j-1);
+				}
+				Console.WriteLine();
+			}
+		}
+
+		private static void S6(int n)
 		{
 			int k = 0;
 			if (n % 2 == 1)
