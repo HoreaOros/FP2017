@@ -30,8 +30,86 @@ namespace SMP
             // **
             // ***
             // ****
-            S3(n); 
+            S3(n);
 
+            // S = 1 + 2*3 + 3*4*5 + 4*5*6*7 + 5*6*7*8*9 + ... + n*(n+1)*....*(2n-1)
+            S4(n);
+
+            S4_2(n);
+            // i * (i + 1) * .... * (2i-1)
+            // (i+1)*(i+2) *....(2i-1)*(2i)*(2i+1)
+
+
+            //1
+            //2 3
+            //3 4 5
+            //4 5 6 7
+            //...
+            S5(n);
+
+
+            // ******
+            // **  **
+            // *    *
+            // *    *
+            // **  **
+            // ******
+            S6(6);
+
+            // *****
+            // ** **
+            // *   *
+            // ** **
+            // *****
+            S6(5);
+
+
+            S7(n);
+            //      1
+            //    2 3
+            //  3 4 5
+            //4 5 6 7
+        }
+
+        private static void S5(int n)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write("{0} ", i + j);
+                }
+                Console.WriteLine();
+            }
+        }
+
+        private static void S4_2(int n)
+        {
+            int suma = 1;
+            int produs = 1;
+            for (int i = 1; i < n; i++)
+            {
+                produs = produs / i * (2 * i) * (2 * i + 1);
+                suma += produs;
+            }
+            Console.WriteLine("1 + 2*3 + 3*4*5 + ... + n*(n+1)*....*(2n-1) = {0}", suma);
+        }
+
+        private static void S4(int n)
+        {
+            int suma = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                // (i + 0) * (i + 1) * ... (i + (i - 1))
+                int produs = 1;
+                for (int j = 0; j < i; j++)
+                {
+                    produs = produs * (i + j);
+                }
+
+                suma += produs; // suma = suma + produs
+            }
+            Console.WriteLine("1 + 2*3 + 3*4*5 + ... + n*(n+1)*....*(2n-1) = {0}", suma);
         }
 
         private static void S3(int n)
