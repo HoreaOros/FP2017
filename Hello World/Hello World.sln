@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMP", "SMP\SMP.csproj", "{3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numere", "Numere\Numere.csproj", "{BEDF2F03-41F5-4A30-A346-84DB7B026E90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Divizibilitate", "Divizibilitate\Divizibilitate.csproj", "{03723179-D04C-48D8-8F08-7452EA867D55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{BEDF2F03-41F5-4A30-A346-84DB7B026E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEDF2F03-41F5-4A30-A346-84DB7B026E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEDF2F03-41F5-4A30-A346-84DB7B026E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03723179-D04C-48D8-8F08-7452EA867D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03723179-D04C-48D8-8F08-7452EA867D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03723179-D04C-48D8-8F08-7452EA867D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03723179-D04C-48D8-8F08-7452EA867D55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
