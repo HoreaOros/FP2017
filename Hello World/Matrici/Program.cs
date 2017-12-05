@@ -37,7 +37,58 @@ namespace Matrici
 
         private static void ParcurgereSpirala(int[,] m4)
         {
-            
+            int i1, i2, j1, j2;
+
+            i1 = 0; j1 = 0;
+            i2 = m4.GetLength(0) - 1;
+            j2 = m4.GetLength(1) - 1;
+
+
+            int k = 0; // cate elemente am afisat
+            while (true)
+            {
+                for (int j = j1; j <= j2; j++)
+                {
+                    Console.Write("{0} ", m4[i1, j]);
+                    k++;
+                }
+                i1++;
+                if (k == m4.Length)
+                {
+                    break;
+                }
+
+                for (int i = i1; i <= i2; i++)
+                {
+                    Console.Write("{0} ", m4[i, j2]);
+                    k++;
+                }
+                j2--;
+                if (k == m4.Length)
+                {
+                    break;
+                }
+                for (int j = j2;  j >= j1; j--)
+                {
+                    Console.Write("{0} ", m4[i2, j]);
+                    k++;
+                }
+                i2--;
+                if (k == m4.Length)
+                {
+                    break;
+                }
+                for (int i = i2; i >= i1; i--)
+                {
+                    Console.Write("{0} ", m4[i, j1]);
+                    k++;
+                }
+                j1++;
+                if (k == m4.Length)
+                {
+                    break;
+                }
+            }
         }
 
         private static int[,] InmultireMatrici(int[,] m1, int[,] m2)
