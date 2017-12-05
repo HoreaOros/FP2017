@@ -37,7 +37,7 @@ namespace Matrici
 
         private static void ParcurgereSpirala(int[,] m4)
         {
-            throw new NotImplementedException();
+            
         }
 
         private static int[,] InmultireMatrici(int[,] m1, int[,] m2)
