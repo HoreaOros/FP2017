@@ -22,46 +22,50 @@ namespace SMP
 
 
 
-            // S2 = 1*2-2*3+3*4-.. +/- n*(n+1)
+            //  // S2 = 1*2-2*3+3*4-.. +/- n*(n+1)
             S2(n);
 
 
-            // * 
-            // **
-            // ***
-            // ****
+            //  // * 
+            //  // **
+            //  // ***
+            //  // ****
             S3(n);
 
-            // S = 1 + 2*3 + 3*4*5 + 4*5*6*7 + 5*6*7*8*9 + ... + n*(n+1)*....*(2n-1)
+            //  // S = 1 + 2*3 + 3*4*5 + 4*5*6*7 + 5*6*7*8*9 + ... + n*(n+1)*....*(2n-1)
             S4(n);
 
             S4_2(n);
-            // i * (i + 1) * .... * (2i-1)
-            // (i+1)*(i+2) *....(2i-1)*(2i)*(2i+1)
+            //  // i * (i + 1) * .... * (2i-1)
+            //  // (i+1)*(i+2) *....(2i-1)*(2i)*(2i+1)
 
 
-            //1
-            //2 3
-            //3 4 5
-            //4 5 6 7
-            //...
+            //  //1
+            //  //2 3
+            //  //3 4 5
+            //  //4 5 6 7
+            //  //...
             S5(n);
 
 
-            // ******
-            // **  **
-            // *    *
-            // *    *
-            // **  **
-            // ******
-            S6(6);
+            //  // ******
+            //  // **  **
+            //  // *    *
+            //  // *    *
+            //  // **  **
+            //  // ******
+            //  S6(6);
 
-            // *****
-            // ** **
-            // *   *
-            // ** **
-            // *****
-            S6(5);
+            //  // *****
+            //  // ** **
+            //  // *   *
+            //  // ** **
+            //  // *****
+            //  S6(5);
+            //  int a = int.Parse(Console.ReadLine());
+            S6(n);
+
+
 
 
             S7(n);
@@ -69,6 +73,61 @@ namespace SMP
             //    2 3
             //  3 4 5
             //4 5 6 7
+
+
+            Console.ReadKey();
+        }
+        static void S7(int n)
+        {
+            int i, j;
+            for (i = 1; i <= n; i++)
+            {
+                for (j = 0; j <= 2 * (n - i); j++)
+                    Console.Write(" ");
+                for (j = 0; j < i; j++)
+                {
+                    Console.Write("{0} ", i + j);
+                }
+                Console.Write("\n");
+            }
+        }
+        static void S6(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("*");
+            }
+            Console.Write("\n");
+            Console.Write("**");
+            for (int i = 0; i < n - 4; i++)
+            {
+                Console.Write(" ");
+            }
+            Console.Write("**");
+            Console.Write("\n");
+            for (int i = 0; i < n - 4; i++)
+            {
+                Console.Write("*");
+                for (int j = 0; j < n - 2; j++)
+                {
+                    Console.Write(" ");
+                }
+                Console.Write("*");
+                Console.Write("\n");
+            }
+            Console.Write("**");
+            for (int i = 0; i < n - 4; i++)
+            {
+                Console.Write(" ");
+            }
+            Console.Write("**");
+            Console.Write("\n");
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("*");
+            }
+
+            Console.Write("\n");
         }
 
         private static void S5(int n)
