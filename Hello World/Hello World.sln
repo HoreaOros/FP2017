@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinPacking", "BinPacking\Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrici", "Matrici\Matrici.csproj", "{E629AA29-7342-44F2-9D99-4E80B5A7430E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursivitate", "Recursivitate\Recursivitate.csproj", "{39A30D39-F4A8-4FEA-AF61-D2EB36FF36C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Secvente", "Secvente\Secvente.csproj", "{E1CCFA2B-CD3F-459D-8EB4-568A0938C2A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{E629AA29-7342-44F2-9D99-4E80B5A7430E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E629AA29-7342-44F2-9D99-4E80B5A7430E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E629AA29-7342-44F2-9D99-4E80B5A7430E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A30D39-F4A8-4FEA-AF61-D2EB36FF36C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A30D39-F4A8-4FEA-AF61-D2EB36FF36C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A30D39-F4A8-4FEA-AF61-D2EB36FF36C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A30D39-F4A8-4FEA-AF61-D2EB36FF36C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1CCFA2B-CD3F-459D-8EB4-568A0938C2A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1CCFA2B-CD3F-459D-8EB4-568A0938C2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1CCFA2B-CD3F-459D-8EB4-568A0938C2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1CCFA2B-CD3F-459D-8EB4-568A0938C2A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
